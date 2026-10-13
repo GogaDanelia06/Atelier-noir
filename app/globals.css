@@ -610,6 +610,9 @@ footer .mark{color:#F6F1EA;justify-items:start;text-align:left;margin-bottom:22p
 
 /* ═══════════════ the working flacon ═══════════════ */
 .flac.gl{pointer-events:auto;place-items:stretch;transform-origin:50% 62%}
+/* the copy layer spans the whole hero; let clicks through to the flacon,
+   keeping only the live beat (its buttons and links) interactive */
+.hero .copy{pointer-events:none}
 .flac.gl canvas{display:block;width:100%;height:100%;-webkit-tap-highlight-color:transparent}
 .flac-hint{position:absolute;left:50%;bottom:7%;transform:translateX(-50%);pointer-events:none;
   font-size:9.5px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);
